@@ -53,11 +53,6 @@ knit        : slidify::knit2slides
 - what kind of judge would you be getting?
 
         - would your attorney think he/she is worth keeping on the bench?
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- --- .class #id -->
 
 --- .page3 #
 
