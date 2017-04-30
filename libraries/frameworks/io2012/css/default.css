@@ -318,7 +318,7 @@ slides > slide:not(.nobackground):before {
 slides > slide:not(.nobackground):after {
   font-size: 12pt;
 /*   content: attr(data-slide-num) "/" attr(data-total-slides); */
-  content: attr(data-slide-num) "1/5"; 
+  content: "1/5"; 
   position: absolute;
   bottom: 20px;
   right: 60px;
