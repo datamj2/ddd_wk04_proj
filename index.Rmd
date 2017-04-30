@@ -14,7 +14,16 @@ knit        : slidify::knit2slides
 <!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
 <style>
 
-
+<!-- /* line 183, ../scss/default.scss */ -->
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;
+  content: attr(data-slide-num) ;
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+  color: darkred
+}
 </style>
 
 ## Ever wonder what attorneys think of judges?
