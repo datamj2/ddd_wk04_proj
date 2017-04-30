@@ -322,6 +322,7 @@ slides > slide:not(.nobackground):after {
   bottom: 20px;
   right: 60px;
   line-height: 1.9;
+  color: darkred
 }
 /* line 194, ../scss/default.scss */
 slides > slide.title-slide:after {
