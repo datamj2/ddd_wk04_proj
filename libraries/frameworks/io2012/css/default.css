@@ -299,21 +299,17 @@ slides > slide.dark {
 /* line 171, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
-/*   content: attr(data-hashtag); */
-  content: attr(data-slide-num) "/" attr(data-total-slides);
+  content: attr(data-hashtag);
   position: absolute;
   bottom: 20px;
   left: 60px;
-  color: darkred
   /* background: url("../images/google_developers_icon_128.png") no-repeat 0 50%; */
-/* 
   -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
   padding-left: 40px;
   height: 30px;
- */
   line-height: 1.9;
 }
 
@@ -321,7 +317,7 @@ slides > slide:not(.nobackground):before {
 /* line 183, ../scss/default.scss */
 slides > slide:not(.nobackground):after {
   font-size: 12pt;
-  content: attr(data-slide-num) "/" attr(data-total-slides);
+  content: attr(data-slide-num);
 /*   content: "1/5";  */
   position: absolute;
   bottom: 20px;
