@@ -9,23 +9,25 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
---- .class #id
 
-<!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
-<style>
 
-<!-- /* line 183, ../scss/default.scss */ -->
-slides > slide:not(.nobackground):after {
-  <!-- font-size: 12pt; -->
-  <!-- content: attr(data-slide-num) "/" attr(data-total-slides); -->
-  content: "2/5" ;
-  <!-- position: absolute; -->
-  <!-- bottom: 20px; -->
-  <!-- right: 60px; -->
-  <!-- line-height: 1.9; -->
-  <!-- color: darkred -->
-}
-</style>
+# <!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
+# <style>
+# 
+# <!-- /* line 183, ../scss/default.scss */ -->
+# slides > slide:not(.nobackground):after {
+#   <!-- font-size: 12pt; -->
+#   <!-- content: attr(data-slide-num) "/" attr(data-total-slides); -->
+#   content: "2/5" ;
+#   <!-- position: absolute; -->
+#   <!-- bottom: 20px; -->
+#   <!-- right: 60px; -->
+#   <!-- line-height: 1.9; -->
+#   <!-- color: darkred -->
+# }
+# </style>
+
+--- .page2
 
 ## Ever wonder what attorneys think of judges?
 
@@ -57,7 +59,7 @@ slides > slide:not(.nobackground):after {
 <!-- <br> -->
 <!-- --- .class #id -->
 
---- .class #id
+--- .page3
 
 ## Here's an app that does that!
 
@@ -79,7 +81,7 @@ slides > slide:not(.nobackground):after {
  
  - view with or without the prediction model
 
---- .class #id
+--- .page4
 
 ## What do some of the ratings look like? 
 
@@ -108,7 +110,7 @@ head(USJudgeRatings)
         
 
 
---- .class #id
+--- .page5
 
 ## Here's a sample plot from the app
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
