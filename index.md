@@ -27,7 +27,7 @@ knit        : slidify::knit2slides
 # }
 # </style>
 
---- .page2
+--- .page2 #
 
 ## Ever wonder what attorneys think of judges?
 
@@ -59,7 +59,7 @@ knit        : slidify::knit2slides
 <!-- <br> -->
 <!-- --- .class #id -->
 
---- .page3
+--- .page3 #
 
 ## Here's an app that does that!
 
@@ -81,7 +81,7 @@ knit        : slidify::knit2slides
  
  - view with or without the prediction model
 
---- .page4
+--- .page4 #
 
 ## What do some of the ratings look like? 
 
@@ -110,7 +110,7 @@ head(USJudgeRatings)
         
 
 
---- .page5
+--- .page5 #
 
 ## Here's a sample plot from the app
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
