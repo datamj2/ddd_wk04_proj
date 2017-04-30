@@ -17,7 +17,8 @@ knit        : slidify::knit2slides
 <!-- /* line 183, ../scss/default.scss */ -->
 slides > slide:not(.nobackground):after {
   font-size: 12pt;
-  content: attr(data-slide-num) ;
+  <!-- content: attr(data-slide-num) "/" attr(data-total-slides); -->
+  content: attr(data-slide-num) "/" ;
   position: absolute;
   bottom: 20px;
   right: 60px;
