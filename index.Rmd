@@ -1,6 +1,6 @@
 ---
 title       : How do attorneys rank judges?
-subtitle    : 
+subtitle    : a pitch presentation project for Coursera - developing data products
 author      : Mike Jansen
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -9,18 +9,94 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
----
+--- .class #id
 
-## Read-And-Delete
-
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id 
-
-## Slide 2
+<!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
+<style>
 
 
+</style>
 
+## Ever wonder what attorneys think of judges?
+
+- Do they think judges are fair?
+
+- How well do they think judges know the law?
+
+- Does the amount of contact they have with them influence their outlook?
+
+- Which judges do they think should be retained?
+
+
+
+## What if you had to appear in court?
+
+- and you asked your attorney to rank the judge on a scale of 1-10
+
+        - on fairness
+        - legal knowledge
+        - the number of times your attorney appeared before the judge
+
+
+- what kind of judge would you be getting?
+
+        - would your attorney think he/she is worth keeping on the bench?
+<br>
+<br>
+<br>
+<br>
+--- .class #id
+
+--- .class #id
+
+## Here's an app that does that!
+
+- it's based on the ratings of state judges in the US Superior Court
+
+- and predicts whether or not attorneys think he/she should be retained
+
+        - based on how attorneys rated judges in different categories
+        
+- giving you an idea of what kind of judge is hearing your case
+
+## Here's how it works
+
+ - you pick one of three categories
+ 
+ - then select a value
+ 
+ - the app then predicts the judicial retention rating based on that category
+ 
+ - view with or without the prediction model
+
+--- .class #id
+
+## What do some of the ratings look like? 
+```{r echo=T}
+head(USJudgeRatings)
+```
+
+- Judge's name is in the left column
+
+- the predictors used in the app are 
+
+        - CONT: number of attorney contacts with the judge
+        - INTG: judge's integrity, rated by attorneys
+        - FAMI: judge's familiarity with the law, rated by attorney's
+
+        
+
+
+--- .class #id
+
+## Here's a sample plot from the app
+```{r echo=F}
+m1<-lm(RTEN ~ FAMI, data = USJudgeRatings)
+labx="rating: judge's familiarity with law"
+clr<-"green"
+plot(USJudgeRatings$FAMI,USJudgeRatings$RTEN,xlab = labx, 
+                     ylab = "ranking: worth of retention",  pch = 16, col=clr,xlim = c(5.5, 10.5), ylim = c(4, 11)) 
+                abline(m1,col=clr,lwd=2)
+                legend(9.5,5,c("data","Model"),pch=c(16,NA),lty=c(NA,1),lwd=c(NA,2),col=c("green","green"))
+```
 

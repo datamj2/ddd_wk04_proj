@@ -46,7 +46,7 @@ article p, article li, article li.build, section p, section li{
   font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond',  'Palatino', sans-serif;
   text-align: justify;
   font-size:22px;
-  line-height: 1.5em;
+  line-height: 1.2em;
   color: #444;
 }
 
@@ -58,9 +58,14 @@ slide:not(.segue) h2{
   text-transform: normal;
   letter-spacing: -2px;
   line-height: 1.2em;
+  color: #111;
 /*  color: #193441;*/
 /*  color: #02574D;*/
-  color: #CC2904;
+/*  color: #CC2904;*/
+
+}
+slides > slide {
+  background: #dfddda;
 }
 
 /* Reduce Space between Title and Body */
@@ -330,7 +335,8 @@ slide.segue h2{
 slide:not(.segue)  h2{
  font-family: "Open Sans Condensed";
  font-weight: 700;
- color: darkslategray;
+/* color: darkslategray;*/
+ color: #f20808;
 }
 article p {
   font-family: "Open Sans"
@@ -352,7 +358,8 @@ pre code {
 }
 
 .title-slide {
-  background-color: #CBE7A5; /* #EDE0CF; ; #CA9F9D*/
+  background-color: #ee4949;
+/*  background-color: #EDE0CF;  /* #CBE7A5; ; #CA9F9D*/
   /* background-image:url(http://goo.gl/EpXln); */
 }
 
@@ -360,9 +367,16 @@ pre code {
  font-family: 'Oswald', 'Helvetica', sanserif; 
 }
 
+.title-slide hgroup > p  {
+/*  color: #535E43 ;  /* ; #EF5150*/
+  color: #e3dfdf;
+}
+
+
 .title-slide hgroup > h1, 
 .title-slide hgroup > h2 {
-  color: #535E43 ;  /* ; #EF5150*/
+/*  color: #535E43 ;  /* ; #EF5150*/
+  color: #e3dfdf;
 }
 
 

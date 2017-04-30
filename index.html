@@ -33,7 +33,7 @@
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
     <h1>How do attorneys rank judges?</h1>
-    <h2></h2>
+    <h2>a pitch presentation project for Coursera - developing data products</h2>
     <p>Mike Jansen<br/></p>
   </hgroup>
   <article></article>  
@@ -41,16 +41,44 @@
     
 
     <!-- SLIDES -->
-    <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Read-And-Delete</h2>
-  </hgroup>
+    <slide class="class" id="id" style="background:;">
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
+
+<style>
+
+
+</style>
+
+<h2>Ever wonder what attorneys think of judges?</h2>
+
+<ul>
+<li><p>Do they think judges are fair?</p></li>
+<li><p>How well do they think judges know the law?</p></li>
+<li><p>Does the amount of contact they have with them influence their outlook?</p></li>
+<li><p>Which judges do they think should be retained?</p></li>
+</ul>
+
+<h2>What if you had to appear in court?</h2>
+
+<ul>
+<li><p>and you asked your attorney to rank the judge on a scale of 1-10</p>
+
+<pre><code>- on fairness
+- legal knowledge
+- the number of times your attorney appeared before the judge
+</code></pre></li>
+<li><p>what kind of judge would you be getting?</p>
+
+<pre><code>- would your attorney think he/she is worth keeping on the bench?
+</code></pre>
+
+<p><br>
+<br>
+<br>
+<br>
+--- .class #id</p></li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,10 +86,69 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Here&#39;s an app that does that!</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ul>
+<li><p>it&#39;s based on the ratings of state judges in the US Superior Court</p></li>
+<li><p>and predicts whether or not attorneys think he/she should be retained</p>
+
+<pre><code>- based on how attorneys rated judges in different categories
+</code></pre></li>
+<li><p>giving you an idea of what kind of judge is hearing your case</p></li>
+</ul>
+
+<h2>Here&#39;s how it works</h2>
+
+<ul>
+<li><p>you pick one of three categories</p></li>
+<li><p>then select a value</p></li>
+<li><p>the app then predicts the judicial retention rating based on that category</p></li>
+<li><p>view with or without the prediction model</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>What do some of the ratings look like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">head(USJudgeRatings)
+</code></pre>
+
+<pre><code>##                CONT INTG DMNR DILG CFMG DECI PREP FAMI ORAL WRIT PHYS RTEN
+## AARONSON,L.H.   5.7  7.9  7.7  7.3  7.1  7.4  7.1  7.1  7.1  7.0  8.3  7.8
+## ALEXANDER,J.M.  6.8  8.9  8.8  8.5  7.8  8.1  8.0  8.0  7.8  7.9  8.5  8.7
+## ARMENTANO,A.J.  7.2  8.1  7.8  7.8  7.5  7.6  7.5  7.5  7.3  7.4  7.9  7.8
+## BERDON,R.I.     6.8  8.8  8.5  8.8  8.3  8.5  8.7  8.7  8.4  8.5  8.8  8.7
+## BRACKEN,J.J.    7.3  6.4  4.3  6.5  6.0  6.2  5.7  5.7  5.1  5.3  5.5  4.8
+## BURNS,E.B.      6.2  8.8  8.7  8.5  7.9  8.0  8.1  8.0  8.0  8.0  8.6  8.6
+</code></pre>
+
+<ul>
+<li><p>Judge&#39;s name is in the left column</p></li>
+<li><p>the predictors used in the app are </p>
+
+<pre><code>- CONT: number of attorney contacts with the judge
+- INTG: judge&#39;s integrity, rated by attorneys
+- FAMI: judge&#39;s familiarity with the law, rated by attorney&#39;s
+</code></pre></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Here&#39;s a sample plot from the app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +159,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Here&#39;s an app that does that!'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What do some of the ratings look like?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Here&#39;s a sample plot from the app'>
+         4
       </a>
     </li>
   </ul>
