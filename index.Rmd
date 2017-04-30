@@ -14,17 +14,17 @@ knit        : slidify::knit2slides
 <!-- https://datamj2.github.io/ddd_wk04_proj/#/ -->
 <style>
 
-<!-- <!-- /* line 183, ../scss/default.scss */ --> -->
-<!-- slides > slide:not(.nobackground):after { -->
-<!--   font-size: 12pt; -->
-<!--   <!-- content: attr(data-slide-num) "/" attr(data-total-slides); --> -->
-<!--   content: "What???" ; -->
-<!--   position: absolute; -->
-<!--   bottom: 20px; -->
-<!--   right: 60px; -->
-<!--   line-height: 1.9; -->
-<!--   color: darkred -->
-<!-- } -->
+<!-- /* line 183, ../scss/default.scss */ -->
+slides > slide:not(.nobackground):after {
+  <!-- font-size: 12pt; -->
+  <!-- content: attr(data-slide-num) "/" attr(data-total-slides); -->
+  content: "2/5" ;
+  <!-- position: absolute; -->
+  <!-- bottom: 20px; -->
+  <!-- right: 60px; -->
+  <!-- line-height: 1.9; -->
+  <!-- color: darkred -->
+}
 </style>
 
 ## Ever wonder what attorneys think of judges?
@@ -51,11 +51,11 @@ knit        : slidify::knit2slides
 - what kind of judge would you be getting?
 
         - would your attorney think he/she is worth keeping on the bench?
-<br>
-<br>
-<br>
-<br>
---- .class #id
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- --- .class #id -->
 
 --- .class #id
 
